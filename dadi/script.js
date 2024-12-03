@@ -11,7 +11,6 @@
 //confrontando i due risultati determina il numero più alto
 //stampare il vincitore che ha scelto il numero più alto
 
-const numeriDado = [1, 2, 3, 4, 5, 6];
 
 const scletaComputer = Math.round(Math.random()*5)+1;
 console.log(scletaComputer)

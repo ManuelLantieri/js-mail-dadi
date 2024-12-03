@@ -13,10 +13,25 @@
 
 const numeriDado = [1, 2, 3, 4, 5, 6];
 
-let sceltaUtente;
+const scletaComputer = Math.round(Math.random()*5)+1;
+console.log(scletaComputer)
 
+let sceltaUtente;
+alert("gioco dei dadi: il gioco consiste nel scegliere un numero più grande rispetto a quello scelto dal computer. Buona fortuna🍀🍀")
 do {
-    sceltaUtente = parseFloat(prompt("scegli un numero da 1 a 6"))
-} while(parseFloat(sceltaUtente));
-alert(ciao)
+    sceltaUtente = parseFloat(prompt("scegli un numero da 1 a 6🧐"))
+} while(sceltaUtente < 1 || sceltaUtente >6);
+
+alert(`nel frattempo il computer ha scelto il numero:${scletaComputer}😜`)
+
+
+if (sceltaUtente > scletaComputer){
+    alert(`complimenti hai vinto🎉🎉`);
+} else if (scletaComputer > sceltaUtente) {
+    alert(`il computer vince🤕🤕`)
+} else {
+    alert(`avete scelto entrambi lo stesso numero quindi nessuno vince🤦‍♂️`)
+}
+
+
 
